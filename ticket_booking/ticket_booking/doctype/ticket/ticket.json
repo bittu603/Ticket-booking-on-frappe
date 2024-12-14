@@ -1,0 +1,135 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "creation": "2024-12-02 11:31:41.833901",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "ticket_id",
+  "customer",
+  "email",
+  "status",
+  "payment",
+  "movie",
+  "column_break_jkku",
+  "theater_show",
+  "seat_number",
+  "booking_time",
+  "num_ticket",
+  "route",
+  "is_published"
+ ],
+ "fields": [
+  {
+   "fieldname": "ticket_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Ticket ID",
+   "options": "Booking"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Pending\nConfirmed\nCancelled"
+  },
+  {
+   "fieldname": "movie",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Movie",
+   "options": "Movie"
+  },
+  {
+   "fieldname": "column_break_jkku",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "theater_show",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Theater show",
+   "options": "Theater show"
+  },
+  {
+   "fieldname": "seat_number",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Seat Number",
+   "options": "A1\nA2\nA2\nA3\nA4\nA5\nA6\nA7\nA8\nA9\nA10"
+  },
+  {
+   "fieldname": "booking_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Booking Time"
+  },
+  {
+   "fieldname": "num_ticket",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Num Ticket"
+  },
+  {
+   "fieldname": "payment",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Payment",
+   "options": "pending\nsuccessful"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Route"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "Is Published"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "is_published",
+ "links": [],
+ "modified": "2024-12-02 15:44:44.462672",
+ "modified_by": "Administrator",
+ "module": "Ticket Booking",
+ "name": "Ticket",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "ticket",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

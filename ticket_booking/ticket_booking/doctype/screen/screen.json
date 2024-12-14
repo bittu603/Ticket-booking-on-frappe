@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-28 16:34:04.020889",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "movie_theater",
+  "screen_name",
+  "seating_capacity"
+ ],
+ "fields": [
+  {
+   "fieldname": "movie_theater",
+   "fieldtype": "Link",
+   "label": "Movie Theater",
+   "options": "Movie Theater"
+  },
+  {
+   "fieldname": "screen_name",
+   "fieldtype": "Data",
+   "label": "Screen Name"
+  },
+  {
+   "fieldname": "seating_capacity",
+   "fieldtype": "Int",
+   "label": "Seating Capacity"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-28 16:39:53.130769",
+ "modified_by": "Administrator",
+ "module": "Ticket Booking",
+ "name": "Screen",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

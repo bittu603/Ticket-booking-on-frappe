@@ -1,0 +1,24 @@
+
+
+<div>
+	<a href="/{{ doc.route |e }}">{{ (doc.title or doc.name) |e }}</a>
+</div>
+<div>
+	{% set movie = frappe.get_doc("Movie", doc.movie) %}
+	
+    <div class="card" style="width: 28rem;">
+		<img src="{{movie.poster}}" class="card-img-top" alt="...">
+		<div class="card-body">
+		  <h5 class="card-title">{{doc.movie}}</h5>
+		  <h5 class="card-title">{{doc.movie_theater}}</h5>
+		  <p >Start Time : {{doc.start_time}} --{{end_time}}</p>
+		  <p >Price : {{doc.ticket_price}}</p>
+		  <div class="d-flex justify-content-around">
+
+			  <a href="/ticket-booking/new?theater_show={{doc.name}}&movie={{doc.movie}}" class="btn btn-primary btn-sm"> Book Ticket Now</a>
+			  <a href="/{{ doc.route |e }}" class="btn btn-secondary">Go To Details</a>
+		  </div>
+		</div>
+	  </div>
+</div>
+<!-- this is a sample default list template -->

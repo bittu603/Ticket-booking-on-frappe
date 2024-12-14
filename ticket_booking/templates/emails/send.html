@@ -1,0 +1,18 @@
+<p>Dear <b>{{ doc.customer_name }}</b>,</p>
+
+<p>Enjoy watching movie </p>
+<p>Your ticket with ID <i>{{ doc.ticket_id }}</i> has been confirmed. Thank you for choosing us!</p>
+<table style="max-width: 600px; margin: 0 auto; background-color: #fff; padding: 20px; border-radius: 8px;">
+    <tr>
+        <td style="text-align: center;">
+            <h3>Your Movie Ticket Confirmation</h3>
+            <!-- <p>Thank you for booking with <strong>{{doc.cinema}}</strong>! Here are your ticket details:</p> -->
+            <p><strong>{{doc.movie}}</strong><br>Theater Show: [Theater Name] | Seat: {{doc.seat_number}}</p>
+            <p>Booking ticket_id: {{doc.ticket_id}}</p>
+            <p> Cinema: {{doc.cinema}}</p>
+            <p>Please arrive 15 minutes before the showtime.</p>
+            <p>For any changes, contact us at <strong>Customer Support</strong> or visit <a href="[Link to your ticket page]">your booking page</a>.</p>
+            <p>Enjoy the show!</p>
+        </td>
+    </tr>
+</table>

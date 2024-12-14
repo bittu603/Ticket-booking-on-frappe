@@ -1,0 +1,38 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<!-- <h1>{{ title |e }}</h1> -->
+<div class="container">
+    <div class="container d-flex justify-content-around">
+        {% set movie = frappe.get_doc("Movie", doc.movie) %}
+
+        <div class="card" style="width: 28rem;">
+            <img src="{{movie.poster}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Title: <span>{{doc.movie}}</span></h5>
+                <h5 class="card-title">Director: {{doc.movie_theater}}</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <div class="d-flex justify-content-around">
+
+                    <a href="/ticket-booking/new?theater_show={{doc.name}}&movie={{doc.movie}}" class="btn btn-primary btn-sm"> Book Ticket Now</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h4>Movie Descriptioon</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Movie :{{doc.movie}}</li>
+                <li class="list-group-item">Director :{{movie.director}}</li>
+                <li class="list-group-item">Duration : 03:00:00</li>
+                <li class="list-group-item"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+<!-- this is a sample default web page template -->

@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "format:{title}",
+ "creation": "2024-11-27 16:30:28.628431",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "director",
+  "is_published",
+  "column_break_sibw",
+  "release_date",
+  "route",
+  "poster"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "director",
+   "fieldtype": "Data",
+   "label": "Director"
+  },
+  {
+   "fieldname": "poster",
+   "fieldtype": "Attach Image",
+   "label": "Poster"
+  },
+  {
+   "fieldname": "column_break_sibw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "release_date",
+   "fieldtype": "Date",
+   "label": "Release Date"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "is Published"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  }
+ ],
+ "has_web_view": 1,
+ "image_field": "poster",
+ "index_web_pages_for_search": 1,
+ "is_published_field": "is_published",
+ "links": [],
+ "modified": "2024-12-01 11:24:06.111106",
+ "modified_by": "Administrator",
+ "module": "Ticket Booking",
+ "name": "Movie",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "movie",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-12-01 14:29:52.011619",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "movie_details_section",
+  "movie",
+  "num_ticket",
+  "book_date",
+  "column_break_noqe",
+  "theater_show",
+  "release_date",
+  "seat_number",
+  "paid",
+  "section_break_rrzd",
+  "customer_name",
+  "email"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "num_ticket",
+   "fieldtype": "Int",
+   "label": "Num Ticket"
+  },
+  {
+   "fieldname": "column_break_noqe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "theater_show",
+   "fieldtype": "Link",
+   "label": "Theater show",
+   "options": "Theater show"
+  },
+  {
+   "default": "0",
+   "fieldname": "paid",
+   "fieldtype": "Check",
+   "label": "paid"
+  },
+  {
+   "fieldname": "seat_number",
+   "fieldtype": "Table MultiSelect",
+   "label": "Seat Number",
+   "options": "Seat Number Child"
+  },
+  {
+   "fieldname": "movie",
+   "fieldtype": "Link",
+   "label": "Movie",
+   "options": "Movie"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fetch_from": "movie.release_date",
+   "fieldname": "release_date",
+   "fieldtype": "Date",
+   "label": "Release Date"
+  },
+  {
+   "fieldname": "movie_details_section",
+   "fieldtype": "Section Break",
+   "label": "Movie Details"
+  },
+  {
+   "fieldname": "section_break_rrzd",
+   "fieldtype": "Section Break",
+   "label": "Customer Details"
+  },
+  {
+   "fieldname": "book_date",
+   "fieldtype": "Date",
+   "label": "Book Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-07 15:32:55.328826",
+ "modified_by": "Administrator",
+ "module": "Ticket Booking",
+ "name": "Booking",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

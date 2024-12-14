@@ -1,0 +1,26 @@
+
+<!-- this is a sample default list template -->
+
+
+
+<div style="width: 100%; display: flex !important; ">
+	<div style="width: 100%;">
+		<div>
+			
+		</div>
+		<div class="card" style="width: 18rem;">
+			<img src="{{ ( doc.poster)}}" class="card-img-top" alt="...">
+			<div class="card-body">
+			<h5 class="card-title">{{ (doc.title or doc.name) |e }}</h5>
+			<h6 class="card-title">Director :{{ (doc.director) |e }}</h5>
+
+			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			<!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+			<a href="/{{ doc.route |e }}" class="btn btn-primary">view Details</a>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
